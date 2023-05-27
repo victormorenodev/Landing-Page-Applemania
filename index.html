@@ -5,40 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="https://kit.fontawesome.com/bfcd46d784.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>iPhone Landing Page</title>
 </head>
 <body>
-  <header id="header">
-    <img id="header-img" src="https://i.imgur.com/MIKdUA8.png">
-    <nav id="nav-bar"> 
-      <ul>
-        <li><a class="nav-link">Features</a></li>
-        <li><a class="nav-link">Meet iPhone 12</a></li>
-        <li><a class="nav-link">Pricing</a></li>
-      </ul>
-    </nav>
-  </header>
-  <h2>Get you iPhone 12 now!</h2>
-  <form id="form" action="https://www.freecodecamp.com/email-submit">
-    <input type="email" id="email" placeholder="Type your best email">
-    <button type="submit" id="submit">Get Started</button>
-  </form>
+  <div class="header">
+    <header id="header">
+      <img id="header-img" src="https://i.imgur.com/MIKdUA8.png">
+      <nav id="nav-bar"> 
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#meet-iphone12">Meet iPhone 12</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <section class="form">
+    <h2>Get your iPhone 12 now!</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" placeholder="Enter your best email" name="email" required>
+      <input id="submit" type="submit" value="GET STARTED" class="btn">
+    </form>
+  </section>
   <section id="features">
-    <div class="feature">
-      <h3>Original sealed</h3>
+    <div class="grid">
+      <div class="icon">
       <i class="fa-brands fa-apple"></i>
     </div>
-    <div class="feature">
-      <h3>Fast shipping</h3>
+    <div class="desc">
+      <h3>Original sealed</h3>
+      <p>Our iPhones come directly from the Apple factory, undamaged and original.</p>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="icon">
       <i class="fa-solid fa-truck-fast"></i>
     </div>
-    <div class="feature">
-      <h3>Secure and private purchase</h3>
+    <div class="desc">
+      <h3>Fast shipping</h3>
+      <p>Delivered in two weeks or you money back.
+      </div>
+  </div>
+  <div class="grid">
+    <div class="icon">
       <i class="fa-solid fa-lock"></i>
     </div>
+    <div class="desc">
+      <h3>Secure and private purchase</h3>
+      <p>6 month warranty regardless of the cause.</p>
+    </div>
+  </div>
   </section>
   <section id="meet-iphone12">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3RqRq0OWm6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3RqRq0OWm6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
   </section>
   <section id="pricing">
     <div class="product">
@@ -75,13 +97,17 @@
       <button class="button">Select</button>
     </div>
   </section>
+  <div id="futer">
   <footer id="footer">
     <ul>
-      <li>Privacy</li>
-      <li>Terms</li>
-      <li>Contact</li>
+      <li><a href="">Privacy</a></li>
+      <li><a href="">Terms</a></li>
+      <li><a href="">Contact</a></li>
     </ul>
-    <p>Copyright 2023, Applemania</p>
+    <div>
+    <p id="paragraph">Copyright 2023, Applemania</p>
+    </div>
   </footer>
+  </div>
 </body>
 </html
